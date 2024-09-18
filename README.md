@@ -1,4 +1,4 @@
-﻿# wordpress_mysql_persistentvolumes
+﻿# Wordpress, MySQL And Persistent Volumes
 
  Deploying WordPress and MySQL using PersistentVolumes and PersistentVolumeClaims.  
  This tutorial is geared towards setting up a simple WordPress site and MySQL database on a Kubernetes cluster, ideal for testing but not suitable for production.  
