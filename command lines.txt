@@ -1,0 +1,20 @@
+  Id CommandLine
+  -- -----------
+   1 minikube start
+   2 kubectl apply -k ..\wordpress_mysql_persistentvolumes\
+   3 kubectl apply -k ./
+   4 cd .\wordpress_mysql_persistentvolumes\
+   5 kubectl apply -k ./
+   6 kubectl get secrets
+   7 kubectl get pvc
+   8 kubectl get pods
+   9 kubectl get services wordpress
+  10 minikube service wordpress --url
+  PS C:\Users\Sialorama\projets\wordpress_mysql_persistentvolumes> kubectl get services wordpress
+    NAME        TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+    wordpress   LoadBalancer   10.99.178.183   <pending>     80:32366/TCP   3m15s
+    
+  PS C:\Users\Sialorama\projets\wordpress_mysql_persistentvolumes> minikube service wordpress --url
+  http://127.0.0.1:62159
+ ❗  Comme vous utilisez un pilote Docker sur windows, le terminal doit être ouvert pour l'exécuter.
+
