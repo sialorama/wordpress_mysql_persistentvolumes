@@ -24,4 +24,17 @@ Here's a brief outline of the key steps:
 
 6. **Cleaning Up**:
    - Once you're done, clean up the resources by running `kubectl delete -k ./`.
+  
+ 7. **Commands lines**:
+    ```
+    $ minikube start  
+    $ git clone https://github.com/sialorama/wordpress_mysql_persistentvolumes.git
+    $ cd wordpress_mysql_persistentvolumes
+    $ kubectl apply -k ./
+    $ kubectl get secrets
+    $ kubectl get pvc
+    $ kubectl get po
+    $ kubectl get service wordpress
+    $ minikube service wordpress --url
+    ```
 
